@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div class="overlay">
+            <div class="choose-player">
+                <button data-value="human">Play With Human</button>
+                <!-- <button data-value="computer-easy">Play With Computer(Easy)</button> -->
+                <button data-value="computer">Play With Computer</button>
+            </div>
+        </div>
+
+        <h1>Tic Tac Toe</h1>
+        <div class="stats-container">
+            <div class="stats-card">
+                <h2>Player 1 Win</h2>
+                <p class="x-win">0</p>
+            </div>
+            <div class="stats-card">
+                <h2>Player 2 Win</h2>
+                <p class="o-win">0</p>
+            </div>
+            <div class="stats-card">
+                <h2>Draw</h2>
+                <p class="draw">0</p>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="cell" data-index="00"></div>
+            <div class="cell" data-index="01"></div>
+            <div class="cell" data-index="02"></div>
+            <div class="cell" data-index="10"></div>
+            <div class="cell" data-index="11"></div>
+            <div class="cell" data-index="12"></div>
+            <div class="cell" data-index="20"></div>
+            <div class="cell" data-index="21"></div>
+            <div class="cell" data-index="22"></div>
+        </div>
+
+        <div class="actions">
+            <button class="reset">Reset Game</button>
+            <!-- <button class="save">Save Game</button> -->
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
